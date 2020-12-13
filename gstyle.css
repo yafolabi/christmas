@@ -1,0 +1,30 @@
+/*
+Pleasure Hotels Overview Style sheet
+
+Author:  Yinka Afolabi
+Date: 11/13/2020
+Filename: gstyle.css
+Supporting files:
+
+*/
+
+/* Image style */
+#main img {
+    width: 750px;
+    height: 600px;
+    border: 10px 5px;
+    margin: 20px 15px 5px 15px ;
+    padding: 5px;
+
+}
+
+section {
+    background-color: rgb(211, 204, 207);
+}
+section#main img {
+    background-color: rgb(204, 51, 0);
+}
+
+section {
+    display: block;
+}

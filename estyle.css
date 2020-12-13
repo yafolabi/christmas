@@ -1,0 +1,31 @@
+/*
+Pleasure Hotels Events Style sheet
+
+Author:  Yinka Afolabi
+Date: 11/29/2020
+Filename: estyle.css
+Supporting files:
+
+*/
+
+/* Audio styles */
+audio, object, embed {
+    display: block;
+    margin: 15px auto;
+}
+aside {
+    display: block;
+    float: right;
+    background-color: rgb(204, 51, 0);
+    border: 1px solid black;
+    padding: 10px;
+    margin: 5px 0px 20px 20px;
+}
+
+aside img {
+    float: right;
+    margin: 5px;
+    height: 400px;
+    width: 450px;
+}
+

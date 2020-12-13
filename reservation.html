@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      Pleasure Hotels Website
+      Author: Yinka Afolabi
+      Date:   11/29/2020
+
+      Filename:   reservation.html
+      Supporting files:
+      events.html
+      index.html
+      overview.html
+      main.css
+      rates.html
+      banner.jpg
+      bstyles.css
+   -->
+   
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Reservation</title>
+   <link href="Assets/styles/main.css" rel="stylesheet" type="text/css" />
+   <link href="Assets/styles/bstyles.css" rel="stylesheet" type="text/css" />
+  
+</head>
+
+<body>
+   <header>
+      <img src="Assets/images/banner.jpg" alt="Pleasure Hotels" />
+   </header>
+   
+      <nav class="horizontal">
+         <ul>
+            <li><a href="index.html">Home </a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="rates.html">Our rates</a></li>
+            <li><a href="overview.html">Overview</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+         </ul>         
+      </nav>
+      <section class="main">
+         <h1>Reservation</h1>
+
+         <form name="bookingform" id="main"
+         action="http://www.pleasurehotels.com/cgi-bin/booking" method="POST">
+        
+         <fieldset id="booking">
+             <legend>Guest Information</legend>
+             
+             <label for="fName">First Name</label>
+             <input type="text" id="fName" name="fname" required="required" 
+             pattern="'/^[A-Za-z\x{00C0}-\x{00FF}][A-Za-z\x{00C0}-\x{00FF}\'\-]+([\ A-Za-z\x{00C0}-\x{00FF}][A-Za-z\x{00C0}-\x{00FF}\'\-]+)*/u';
+             "/>
+
+             <label for="lName">Last Name</label>
+             <input type="text" id="lName" name="lname" required="required" 
+             pattern="'/^[A-Za-z\x{00C0}-\x{00FF}][A-Za-z\x{00C0}-\x{00FF}\'\-]+([\ A-Za-z\x{00C0}-\x{00FF}][A-Za-z\x{00C0}-\x{00FF}\'\-]+)*/u';
+             "/>
+
+             <label for="address">Address</label>
+             <input type="text" id="address" name="address" required="required"/>
+
+             <label for="city">City</label>
+             <input type="text" id="city" name="city" required="required" />
+
+             <label for="city">State</label>
+             <input type="text" id="state" name="state" required="required" value="Missouri"/>
+
+             <label for="zip">Postal Code</label>
+             <input type="text" id="zip" name="zip" placeholder="nnnnn (-nnnn)" required="required" pattern="^\d{5} (\-\d{4})?$" minlength="5"/>
+
+             <label for="phone">Phone</label>
+             <input type="tel" id="phone" name="phone" placeholder="(nnn) nnn-nnnn)" required="required" 
+             pattern="^[0-9-+\s()]*$" minlength="10" maxlength="14"/>
+
+             <label for="email">Email</label>
+             <input type="email" id="email" name="email" required="required" 
+             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+
+             <h1>Next of Kin</h1>
+             
+             <label for="fName">First Name</label>
+             <input type="text" id="firstName" name="fname" required="required" 
+             pattern="'/^[A-Za-z\x{00C0}-\x{00FF}][A-Za-z\x{00C0}-\x{00FF}\'\-]+([\ A-Za-z\x{00C0}-\x{00FF}][A-Za-z\x{00C0}-\x{00FF}\'\-]+)*/u';
+             "/>
+
+             <label for="lName">Last Name</label>
+             <input type="text" id="lastName" name="lname" required="required" 
+             pattern="'/^[A-Za-z\x{00C0}-\x{00FF}][A-Za-z\x{00C0}-\x{00FF}\'\-]+([\ A-Za-z\x{00C0}-\x{00FF}][A-Za-z\x{00C0}-\x{00FF}\'\-]+)*/u';
+             "/>
+
+             <label for="phone">Phone</label>
+             <input type="tel" id="cellphone" name="phone" placeholder="(nnn) nnn-nnnn)" required="required" 
+              pattern="^[0-9-+\s()]*$" minlength="10" maxlength="14"/>
+
+             <label for="email">Email</label>
+             <input type="email" id="mail" name="email" required="required" 
+             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Room</legend> 
+                
+                <label for="room">Classic Twin Bedded</label>
+                <input id="number" name="number" type="number" value="0" min="0" max="4" />
+
+                <label for="room">Classic King</label>
+                <input id="roomnumber" name="number" type="number" value="0" min="0" max="4" />
+
+                <label for="room">Superior King</label>
+                <input id="room" name="number" type="number" value="0" min="0" max="4" />
+
+                <label for="room">Event Hall</label>
+                <input id="click" name="click" type="checkbox" />
+
+
+                <label for="room">Booking Days (select all that apply)</label>
+                <select id="days" name="days" size="7" multiple="multiple">
+                   <option value="monday">Monday</option>
+                   <option value="tuesday">Tuesday</option>
+                   <option value="wednsday">Wednsday</option>
+                   <option value="thursday">Thursday</option>
+                   <option value="friday">Friday</option>
+                   <option value="saturday">Saturday</option>
+                   <option value="Sunday">Sunday</option>
+               </select>
+
+            </fieldset>
+               
+         
+              <input type="submit" value="Submit Information" />
+             <input type="reset" value="Cancel" />
+ 
+           
+            
+        </form>
+         
+      </section>
+
+      <footer>
+         <address>
+            Pleasure Hotels &#183;
+            8152 Grant Colonial Dr. &#183;
+            St. Louis, MO 63123 &#183;
+            (682) 560 - 7356 &#183;
+            info@pleasurehotels.com
+         </address>
+      </footer>
+   </body>
+   </html>
+
+   
+   

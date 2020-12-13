@@ -1,0 +1,93 @@
+/*
+Pleasure Hotels Reservation Style sheet
+
+Author:  Yinka Afolabi
+Date: 12/09/2020
+Filename: gstyle.css
+Supporting files:
+go.png
+stop.png
+
+*/
+
+
+
+
+/* Fieldset styles */
+fieldset {
+    background-color: rgb(231, 231, 169);
+    border: 1px solid rgb(69, 77, 70);
+    float: left;
+    margin: 10px 2px 10px 3%;
+    width: 45%;
+}
+
+legend {
+    background-color: rgb(67, 76, 170 );
+
+}
+
+
+
+/* Label styles */
+label {
+    clear: left;
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 4% 7px 5px;
+    width: 40%;
+}
+
+/*Input Control Styles */
+input {
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 0px;
+    width: 50%;
+}
+
+/* Selection list styles */
+select {
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 0px;
+}
+
+/* Checkbox styles */
+input#click {
+    clear: right;
+    width: 25px;
+}
+
+input[type="submit"], input[type=reset] {
+    height: 40px;
+    margin-right: 20px;
+    width: 180px;
+}
+
+/* Validation styles */
+input:focus, select:focus {
+    background-color: ivory;
+}
+
+input:focus:valid {
+    background: rgb(220, 255, 220) url(Assets/images/go.png) bottom right no-repeat;
+
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+
+input:focus:invalid {
+    background: rgb(255, 232, 233) url(Assets/images/stop.png) bottom right no-repeat;
+
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
+}
+

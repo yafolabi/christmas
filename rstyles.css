@@ -1,0 +1,35 @@
+/*
+Pleasure Hotels Tables Style sheet
+
+Author:  Yinka Afolabi
+Date: 11/30/2020
+Filename: rstyle.css
+Supporting files:
+
+*/
+
+table {
+    font-size: 15px;
+    border-collapse: collapse;
+    border: 15px outset rgb(204, 51, 0);
+    margin: 10px auto;
+    width: 500px
+    }
+
+thead {
+    background-color: rgb(55, 211, 216);
+}
+
+
+th, td {border: 2px solid rgb(124, 118, 118);
+    vertical-align: top;
+    padding: 5px;
+}
+
+tr td:nth-of-type(2), tr td:nth-of-type(3), tr td:nth-of-type(4){
+    text-align: right;
+}
+
+.feeColumns {
+background-color: rgb(146, 76, 119);
+}

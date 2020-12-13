@@ -1,0 +1,137 @@
+/*
+Pleasure Hotels Style sheet
+
+Author:  Yinka Afolabi
+Date: 11/30/2020
+Filename: main.css
+Supporting files:
+sky2.jpg
+
+*/
+
+/* html styles */
+html {
+    background: url("Assets/../image/sky2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+body {
+    background-color: white;
+}
+
+
+/* Set the default page element styles */
+body {
+    margin: 0px auto;
+    width: 800px;
+}
+
+body *{
+    
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 100%;
+    font-weight: inherit;
+    line-height: 1.2em;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+
+
+/* Navigation links */
+nav ul {
+    list-style: none;
+    margin-top: 5px;
+}
+
+nav li {
+    float: left;
+    width: 19%;
+    text-align: center;
+    border: 1px solid rgb(29, 119, 29);
+    margin: 5px 2px 15px 2px;
+}
+
+nav li a {
+    display: block;
+    color: rgb(204, 51, 0);
+    text-decoration: none;
+    background-color: white;
+}
+
+nav li a:hover {
+    color: rgb(68, 76, 169);
+}
+
+/* h1, h2, P */
+h1 {
+    font-size: 18px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: rgb(68, 76, 169);
+    margin-top: 15px;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 5px;
+    color: rgb(68, 76, 169);
+    margin-top: 15px;
+}
+
+p {
+margin: 7px;
+}
+
+#main {
+    border-top: 2px solid rgb(68, 76, 169);
+}
+
+#main ul {
+    list-style-type: circle;
+    margin-left: 50px;
+    font-size: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#main ul li {
+margin-bottom: 10px;
+}
+
+#main ul li strong {
+    font-weight: normal;
+    color: rgb(68, 76, 169);
+}
+
+footer {
+    border-top: 1px solid rgb(68, 76, 169);
+    clear: both;
+    float: left;
+    width: 100%;
+    background-color: rgb(231, 231, 169);
+    }
+
+    address {
+        font-style: normal;
+        font-size: 10px;
+        text-align: center;
+        padding: 5px;
+        
+    }
+
+    /*image styles */
+    img.irregularwrap {
+        clear: right;
+        float: right;
+        margin: 0px;
+    }
+
+    #main img{
+        float: right;
+    }
